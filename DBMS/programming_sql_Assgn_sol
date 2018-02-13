@@ -1,0 +1,71 @@
+1.SELECT developing, scost FROM software WHERE developing = 'PASCAL';
+
+2.SELECT pname, TIMESTAMPDIFF(YEAR, dob, CURDATE()) AS age FROM programmer;
+
+3.SELECT pname, course FROM studies WHERE course = 'DAP';
+
+4.SELECT pname, dob FROM programmer WHERE DATE_FORMAT(dob,'%M') = 'JANUARY';
+
+5.SELECT MAX(sold) FROM software
+
+6.SELECT MIN(coursefee) FROM studies;
+
+7.SELECT COUNT(*) FROM studies WHERE course = 'PGDCA';
+
+8.SELECT developing, scost FROM software WHERE developing = 'C' GROUP BY developing;
+
+9.SELECT * FROM software WHERE pname = 'RAMESH';
+
+10.SELECT COUNT(*) FROM studies WHERE institute = 'SABHARI';
+
+11.SELECT * FROM software WHERE scost > 2000;
+
+12.
+
+13.SELECT * FROM software WHERE scost > dcost;
+
+14.SELECT developing, MAX(scost) FROM software WHERE developing = 'BASIC';
+
+15.SELECT COUNT(*) FROM software WHERE developing = 'BASIC';
+
+16.SELECT COUNT(*) FROM studies WHERE institute = 'PRAGATHI';
+
+17.SELECT COUNT(*) FROM studies WHERE coursefee  BETWEEN 5000  AND 10000;
+
+18.SELECT AVG(coursefee) FROM studies;
+
+19.SELECT * FROM programmer WHERE prof1 = 'C' OR prof2 = 'C';
+
+20.SELECT * FROM programmer WHERE prof1 IN ('COBOL', 'PASCAL') OR prof2 IN ('COBOL', 'PASCAL');
+
+21.SELECT * FROM programmer WHERE prof1 NOT IN ('C', 'PASCAL') AND prof2 NOT IN ('C', 'PASCAL');
+
+22.SELECT TIMESTAMPDIFF(YEAR, MAX(doj), CURDATE()) AS old FROM programmer WHERE sex = 'M';
+
+23.SELECT pname, TIMESTAMPDIFF(YEAR, doj, CURDATE()) AS experience FROM programmer ORDER BY expirience DESC;
+
+24.SELECT pname, TIMESTAMPDIFF(YEAR, doj, CURDATE()) AS experience FROM programmer WHERE MONTH(dob) = MONTH(CURDATE());
+
+25.SELECT COUNT(*) FROM programmer WHERE sex = 'F';
+
+26.
+
+27.SELECT AVG(salary) FROM programmer;
+
+28.SELECT COUNT(*) FROM programmer WHERE salary BETWEEN 2000 AND 4000;
+
+29.SELECT * FROM programmer WHERE prof1 NOT IN ('COBOL', 'PASCAL') AND prof2 NOT IN ('COBOL', 'PASCAL');
+
+30.SELECT pname, dcost FROM software GROUP BY pname;
+
+31.SELECT pname, sold FROM software GROUP BY pname;
+
+32.SELECT pname, COUNT(title)  FROM software GROUP BY pname;
+
+33.SELECT pname, scost  FROM software GROUP BY pname;
+
+34.SELECT developing, scost  FROM software GROUP BY developing;
+
+35.SELECT developing, AVG(dcost), AVG(scost), AVG(scost)/sold FROM software GROUP BY developing;
+
+36.

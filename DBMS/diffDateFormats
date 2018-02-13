@@ -1,0 +1,44 @@
+
+Saturday, January 27, 2018	
+SELECT DATE_FORMAT(`date`,'%W, %M %e, %Y') AS showdate FROM table ORDER BY date DESC
+
+
+27.01.18	
+SELECT DATE_FORMAT(`date`,'%d.%m.%y') AS showdate FROM table ORDER BY date DESC
+
+
+27/01/18	
+SELECT DATE_FORMAT(`date`,'%d/%m/%y') AS showdate FROM table ORDER BY date DESC
+
+
+27 January 2018	
+SELECT DATE_FORMAT(`date`,'%e %M %Y') AS showdate FROM table ORDER BY date DESC
+
+
+27th January 2018	
+SELECT DATE_FORMAT(`date`,'%D %M %Y') AS showdate FROM table ORDER BY date DESC
+
+
+Sat, 01 Jan 2018 14:35:46	
+SELECT DATE_FORMAT(`date`,'%a, %m %b %Y %T') AS showdate FROM table ORDER BY date DESC
+
+
+Saturday, January 27, 2018	
+SELECT DATE_FORMAT(`date`,'%W, %M %e, %Y') AS showdate FROM table ORDER BY date DESC
+
+
+14:36:16	
+SELECT DATE_FORMAT(`date`,'%H:%i:%s') AS showdate FROM table ORDER BY date DESC
+
+
+2018-W04-27	
+SELECT DATE_FORMAT(`date`,'%Y-W%u-%d') AS showdate FROM table ORDER BY date DESC
+
+
+2018-01-27	
+SELECT DATE_FORMAT(`date`,'%Y-%m-%d') AS showdate FROM table ORDER BY date DESC
+
+
+2018-01-27T14:36:51	
+SELECT DATE_FORMAT(`date`,'%Y-%m-%dT%H:%i:%s') AS showdate FROM table ORDER BY date DESC
+

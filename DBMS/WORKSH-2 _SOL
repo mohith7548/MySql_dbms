@@ -1,0 +1,62 @@
+1.SELECT ename, hiredate FROM employee ORDER BY  TIMESTAMPDIFF(YEAR,hiredate,CURDATE()) DESC
+
+2*.SELECT ename, DATE_FORMAT(hiredate, '%D %W %M %Y') FROM employee WHERE job = 'MANAGER';
+  //It's not possible to spell a date completely in words//
+
+3.SELECT ename, TIMESTAMPDIFF(YEAR,hiredate,CURRENT_DATE) AS EXP FROM employee ORDER BY ename DESC;
+
+4.SELECT ename, TIMESTAMPDIFF(YEAR,hiredate,CURRENT_DATE) FROM employee WHERE TIMESTAMPDIFF(YEAR,hiredate,CURRENT_DATE) >= 2 ORDER BY ename DESC;
+
+5.SELECT UPPER(ename), LOWER(ename), INIT(ename) FROM employee;
+
+6. SELECT LENGTH(ename) FROM employee;
+
+7.//SELECT ename FROM employee WHERE ename LIKE 'SRI%GARU';
+
+8.SELECT ename, MONTH(hiredate) FROM employee;
+
+9*.SELECT ename, DATE_FORMAT(hiredate, '%D %W %M %Y') FROM employee;
+
+10*.SELECT CONCAT(ename, '--', job, '---', sal) FROM employee;
+
+11*.SELECT ename, LOCATE('I', ename) FROM employee;
+
+12*.SELECT ename, SUBSTRING(ename, 2, LENGTH(ename) -1 ) FROM employee;
+
+13.SELECT ename FROM employee WHERE hiredate LIKE '1981-04-%' OR hiredate LIKE  '1982-04-%'
+
+14.SELECT deptno, MAX(sal), MIN(sal), AVG(sal) FROM employee WHERE deptno IN (30, 10) GROUP BY deptno;
+
+15*.SELECT DISTINCT(job) FROM employee WHERE deptno=30 AND job NOT IN (SELECT job FROM employee WHERE deptno=20);
+  //SELECT DISTINCT(job), deptno FROM employee WHERE deptno = 30 AND deptno <> 20 GROUP BY deptno;//
+
+16. SELECT COUNT(empno), deptno FROM employee GROUP BY deptno;
+
+17.SELECT COUNT(empno), YEAR(hiredate) FROM employee GROUP BY YEAR(hiredate);
+
+18.SELECT COUNT(empno),job FROM employee GROUP BY job;
+
+19.SELECT deptno, MAX(sal), MIN(sal), AVG(sal) FROM employee GROUP BY deptno;
+
+20.SELECT job, MAX(sal), MIN(sal), AVG(sal) FROM employee GROUP BY job;
+
+21.SELECT job, MAX(sal), MIN(sal), AVG(sal) FROM employee WHERE job IN('MANAGER', 'CLERK') GROUP BY job;
+
+22.SELECT deptno, MAX(sal), MIN(sal), AVG(sal) FROM employee GROUP BY deptno HAVING COUNT(ename) >=3;
+
+23.SELECT job, COUNT(ename) FROM employee GROUP BY job;
+
+24.SELECT mgr, COUNT(empno) FROM employee GROUP BY mgr ORDER BY mgr;
+
+25.SELECT * FROM (SELECT mgr, COUNT(mgr) AS cnt FROM employee GROUP BY mgr) AS der_table WHERE cnt >= 3;
+
+26.SELECT deptno,COUNT(empno) AS cnt FROM employee GROUP BY deptno HAVING cnt>= 3;
+
+27.SELECT job,COUNT(job) AS cnt FROM employee GROUP BY job HAVING cnt >= 3;
+
+28.SELECT MONTH(hiredate), COUNT(MONTH(hiredate)) AS cnt FROM employee GROUP BY MONTH(hiredate) HAVING cnt >= 3;
+
+29.SELECT hiredate, COUNT(hiredate) AS cnt FROM employee GROUP BY hiredate HAVING cnt >=2 ;
+
+30.SELECT deptno, COUNT(deptno) AS cnt, TIMESTAMPDIFF(YEAR,hiredate,CURRENT_DATE) AS exp FROM employee GROUP BY deptno HAVING cnt >= 3 AND exp >= 17;
+

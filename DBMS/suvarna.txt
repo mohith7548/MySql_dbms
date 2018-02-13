@@ -1,0 +1,1020 @@
+pwd
+SHOW DATABASES;
+USE s;
+CREATE TABLE customer(id INT,name VARCHAR(20),status INT,city VARCHAR(20));
+SHOW TABLES
+EXIT
+EXIT;
+SHOW TABLES EXIT EXIT;
+CLEAR;
+SHOW TABLES;
+INSERT INTO customer(id,name,status,city) VALUES(1,"Smith","20","London");
+INSERT INTO customer(id,name,status,city) VALUES(1,"Jones","10","Paris");
+help
+clear;
+SHOW TABLES;
+SELECT * FROM customer
+EXIT;
+SELECT * FROM customer EXIT;
+SELECT * FROM customer;
+select * from customer where status='10';
+set id='2';
+id='2';
+UPDATE id=2
+exit;
+UPDATE id=2 exit;
+UPDATE id=2;
+SHOW DATABASES
+EXIT;
+SHOW DATABASES EXIT;
+SHOW DATABASES;
+DELETE s;
+SELECT DATABASE s;
+SELECT s;
+PWD;
+CLEAR;
+SHOW DATABASES;
+SELECT DATABASE s;
+SELECT s;
+SELECT Database s;
+SHOW Databases;
+show databases;
+help;
+use s
+show data;
+show columns;
+help
+SHOW TABLES
+;
+show databases;
+DROP DATABASE s
+;
+SHOW DATABASES;
+select mysql
+;
+show tables;
+SELECT DATABASE mysql
+;
+SELECT mysql;
+SHOW DATABASES
+;
+SHOW TABLES
+;
+CREATE DATABASE s;
+SHOW DATABASES;
+SELECT DATABASE s;
+SELECT s;
+USE s
+SHOW TABLES;
+CREATE TABLE student
+(first_name VARCHAR(20), 
+last_name VARCHAR(20),
+dob DATE,
+roll INT);
+CREATE TABLE student (first_name VARCHAR(20),  last_name VARCHAR(20), dob DATE, roll INT);
+SHOW TABLES;
+SELECT TABLE student;
+USE TABLE student;
+INSERT INTO student VALUES
+('Kune','Mohith','23-MAY-1999',411641);
+INSERT INTO student VALUES ('Kune','Mohith','23-MAY-1999',411641);
+SHOW TABLES;
+SELECT * FROM student;
+UPDATE TABLE student SET dob='1999-05-23';
+UPDATE student SET dob='1999-05-23';
+SELECT * FROM student;
+INSERT INTO student VALUES ('GNS','Raviteja','1999-05-06',411625);
+SELECT * FROM student;
+INSERT INTO student VALUES ('Vaditya','Shiva Shankar','1999-06-12',411678);
+SELECT * FROM student;
+INSERT INTO student VALUES ('Appala','Sai Teja','1998-02-7',411678);
+SELECT * FROM student;
+SELECT roll FROM student;
+SHOW DATABASES;
+SELECT S;
+SELECT s;
+USE s;
+SHOW TABLES;
+SELECT * FROM student;
+UPDATE student SET roll=411668 WHERE first_name='Appala';
+SELECT * FROM student;
+DELETE student WHERE first_name='GNS';
+DELETE FROM student WHERE first_name='GNS';
+SELECT * FROM student;
+INSERT INTO student VALUES ('Kaligotla','Raghu Ram','1999-03-02',411632);
+INSERT INTO student VALUES ('Nallam','Chakra Pani','1998-09-06',411653);
+SELECT * FROM student;
+SELECT * WHERE STUDENT;
+SELECT * WHERE studenT;
+SELECT * WHERE student;
+SELECT FROM DOB student ;
+SELECT DOB FROM student ;
+SELECT dob<roll FROM student ;
+SELECT dob,roll FROM student ;
+SELECT dob,roll,first_name FROM student ;
+UPDATE student SET dob='1997-05-34' WHERE ROLL=411678;
+SELECT * FROM student;
+UPDATE student SET dob='1999-02-19' WHERE roll=411678,411641;
+UPDATE student SET dob='1999-02-19' WHERE roll=411678;
+SELECT * FROM student;
+ALTER TABLE student ADD gender char(1);
+SELECT * FROM student;
+UPDATE student SET gender='M' ;
+SELECT * FROM student;
+SELECT gender,dob,first_name
+FROM student;
+SELECT gender,dob,first_name FROM student;
+SELECT COUNT(DISTINCT gender) FROM student;
+SELECT COUNT(gender) FROM student;
+SELECT COUNT(DISTINCT dob) FROM student;
+SELECT COUNT(DISTINCT first_name) FROM student;
+system clear
+SHOW TABLES;
+SELECT * FROM student;
+system cls;
+SELECT * FROM student;
+SELECT roll 
+FROM student
+WHERE roll>=411641;
+SELECT roll  FROM student WHERE roll>=411641;
+SELECT roll  FROM student WHERE roll<>411641;
+SELECT roll  FROM student WHERE roll!=411641;
+show databases;
+CREATE DATABASE sample;
+USE test3
+SELECT DATABASE;
+SELECT DATABASE();
+show databases;
+USE sample;
+SHOW DATABASES();
+SELECT DATABASE();
+DROP DATABASE sample IF EXISTS sample;
+DROP DATABASE IF EXISTS sample;
+SHOW DATABASES;
+CREATE DATABASE sample;
+USE sample;
+CREATE TABLE department(
+dept_name VARCHAR(20),
+building VARCHAR(20),
+PRIMARY KEY(dept_name));
+CREATE TABLE department( dept_name VARCHAR(20), building VARCHAR(20), PRIMARY KEY(dept_name));
+SHOW TABLES;
+CREATE TABLE course(
+course_id VARCHAR(20),
+title VARCHAR(20),
+dept_name VARCHAR(20),
+credits NUMERIC(2,0),
+PRIMARY KEY(course_id),
+FOREIGN KEY(dept_name) REFERENCES department);
+CREATE TABLE course( course_id VARCHAR(20), title VARCHAR(20), dept_name VARCHAR(20), credits NUMERIC(2,0), PRIMARY KEY(course_id), FOREIGN KEY(dept_name) REFERENCES department);
+SHOW TABLES;
+CREATE TABLE course( course_id VARCHAR(20), title VARCHAR(20), dept_name VARCHAR(20), credits NUMERIC(2,0), PRIMARY KEY(course_id), FOREIGN KEY(dept_name) REFERENCE department);
+CREATE TABLE course( course_id VARCHAR(20), title VARCHAR(20), dept_name VARCHAR(20), credits NUMERIC(2,0), PRIMARY KEY(course_id), FOREIGN KEY(dept_name) REFERENCES department);
+SHOW COLUMNS;
+SELECT * FROM department
+;
+SHOW TABLES;
+INSERT INTO department VALUES(
+'Biology','Watson');
+INSERT INTO department VALUES( 'Biology','Watson');
+SELECT * FROM department
+;
+INSERT INTO department VALUES( 'Comp.Sci','Taylor');
+SELECT * FROM department;
+INSERT INTO department VALUES( 'Elec.Eng','Taylor');
+SELECT * FROM department;
+INSERT INTO department VALUES( 'Finance','Painter');
+INSERT INTO department VALUES( 'History','Painter');
+INSERT INTO department VALUES( 'Music','Packard');
+INSERT INTO department VALUES( 'Physics','Watson');
+SELECT * FROM department;
+CREATE TABLE course( course_id VARCHAR(20), title VARCHAR(20), dept_name VARCHAR(20), credits NUMERIC(2,0), PRIMARY KEY(course_id), FOREIGN KEY(dept_name) REFERENCES department);
+SELECT * FROM department;
+CREATE TABLE course( course_id VARCHAR(20), title VARCHAR(20), dept_name VARCHAR(20), credits NUMERIC(2,0), PRIMARY KEY(course_id), FOREIGN KEY(dept_name) REFERENCES department);
+CREATE TABLE department( dept_name VARCHAR(20), building VARCHAR(20), PRIMARY KEY(dept_name));
+SHOW ENGINE INNODB STATUS;
+CREATE TABLE course( course_id VARCHAR(20), title VARCHAR(20), dept_name VARCHAR(20), credits NUMERIC(2,0), PRIMARY KEY(course_id), FOREIGN KEY(dept_name) REFERENCES department );
+CREATE TABLE course( course_id VARCHAR(20), title VARCHAR(20), dept_name VARCHAR(20), credits NUMERIC(2,0), PRIMARY KEY(course_id), FOREIGN KEY(dept_name) REFERENCES (department) );
+CREATE TABLE course( course_id VARCHAR(20), title VARCHAR(20), dept_name VARCHAR(20), credits NUMERIC(2,0), PRIMARY KEY(course_id), FOREIGN KEY(dept_name) REFERENCES (department));
+CREATE TABLE course( course_id VARCHAR(20), title VARCHAR(20), dept_name VARCHAR(20), credits NUMERIC(2,0), PRIMARY KEY(course_id), FOREIGN KEY(dept_name) REFERENCES department);
+SHOW ENGINE INNODB STATUS;
+CREATE TABLE course( course_id VARCHAR(20), title VARCHAR(20), dept_name VARCHAR(20), credits NUMERIC(2,0), PRIMARY KEY(course_id), FOREIGN KEY(dept_name) REFERENCES department );
+CREATE TABLE course( course_id VARCHAR(20), title VARCHAR(20), dept_name VARCHAR(20), credits NUMERIC(2,0), PRIMARY KEY(course_id), FOREIGN KEY(dept_name) REFERENCES department(dept_name));
+SHOW TABLES;
+SELECT * FROM department;
+SELECT * FROM course;
+INSERT INTO course VALUES(
+'BIO-101','Intro. to Biology','Biology',4);
+INSERT INTO course VALUES( 'BIO-101','Intro. to Biology','Biology',4);
+SELECT * FROM course;
+INSERT INTO course VALUES( 'BIO-301','Genetics','Biology',4);
+INSERT INTO course VALUES( 'BIO-399','Computational Biology','Biology',3);
+INSERT INTO course VALUES( 'CS-101','Intro. to Computer Science','Comp.Sci',4);
+SELECT * FROM course;
+INSERT INTO course VALUES( 'CS-190','Game Design','Comp.Sci',4);
+INSERT INTO course VALUES( 'CS-315','Robotics','Comp.Sci',3);
+INSERT INTO course VALUES( 'CS-319','Image Processing','Comp.Sci',3);
+INSERT INTO course VALUES( 'CS-347','DatabaseManagement','Comp.Sci',3);
+INSERT INTO course VALUES( 'EE-181','Intro. to Digital Systems','Elec.Eng',3);
+INSERT INTO course VALUES( 'FIN-201','Investment Banking','Finance',3);
+INSERT INTO course VALUES( 'HIS-351','World History','History',3);
+INSERT INTO course VALUES( 'MU-199','Music Video Productio','Music',3);
+INSERT INTO course VALUES( 'PHY-101','Physics','Physics',4);
+SELECT * FROM course;
+SHOW DATABASES;
+SHOW TABLES;
+USE s;
+SHOW TABLES;
+SELECT * FROM student;
+CREATE TABLE deparment(dept_name VARCHAR(10));
+ALTER TABLE student ADD dept_name VARCHAR(10);
+SELECT * FROM student;
+INSERT INTO department ('EEE');
+INSERT INTO department VALUES('EEE');
+INSERT INTO department VALUES ('EEE');
+SHOW TABLES;
+DROP TABLE deparment;
+CREATE TABLE department(dept_name VARCHAR(10));
+SHOW TABLES;
+INSERT INTO department VALUES ('EEE');
+INSERT INTO department VALUES ('CSE');
+INSERT INTO department VALUES ('ECE');
+INSERT INTO department VALUES ('Bio.Tech');
+INSERT INTO department VALUES ('MECH');
+SELECT * FROM department;
+SHOW TABLES;
+CREATE TABLE faculty(
+name VARCHAR(20),
+dept_name VARCHAR(10),
+salary NUMERIC(5,0));
+CREATE TABLE faculty( name VARCHAR(20), dept_name VARCHAR(10), salary NUMERIC(5,0));
+FOREIGN KEY(dept_name) REFERENCES department(dept_name);
+DROP TABLE faculty
+;
+SHOW TABLES;
+CREATE TABLE faculty( id INT,name VARCHAR(20), dept_name VARCHAR(10), salary NUMERIC(5,0), PRIMARY KEY(id), FOREIGN KEY(dept_name) REFERENCES department(dept_name));
+CREATE TABLE faculty( id INT,name VARCHAR(20), dept_name VARCHAR(10), salary NUMERIC(5,0), PRIMARY KEY(id), FOREIGN KEY(dept_name) REFERENCES department);
+CREATE TABLE faculty( id INT,name VARCHAR(20), dept_name VARCHAR(10), salary NUMERIC(5,0), PRIMARY KEY(id), FOREIGN KEY(dept_name) REFERENCES department(dept_name));
+SELECT * FROM department;
+SHOW ENGINE INNODB STATUS;
+SELECT * FROM department;
+CREATE TABLE course( course_id VARCHAR(20), title VARCHAR(20), dept_name VARCHAR(20), credits NUMERIC(2,0), PRIMARY KEY(course_id), FOREIGN KEY(dept_name) REFERENCES department(dept_name));
+CREATE TABLE faculty( id INT,name VARCHAR(20), dept_name VARCHAR(10), salary NUMERIC(5,0), PRIMARY KEY(id), FOREIGN KEY(dept_name) REFERENCES department(dept_name));
+SELECT * FROM student;
+UPDATE student SET dept_name='CSE' WHERE roll=411641;
+SELECT * FROM student;
+UPDATE student SET dept_name='ESE' WHERE roll=411678;
+UPDATE student SET dept_name='ECE' WHERE roll=411678;
+UPDATE student SET dept_name='EEE' WHERE roll=411668;
+SELECT * FROM student;
+UPDATE student SET dept_name='Bio.Tech' WHERE roll=411632;
+UPDATE student SET dept_name='MECH' WHERE roll=411653;
+SELECT * FROM student;
+SELECT * FROM department;
+CREATE TABLE faculty( id INT,name VARCHAR(20), dept_name VARCHAR(10), salary NUMERIC(5,0), PRIMARY KEY(id), FOREIGN KEY(dept_name) REFERENCES department(dept_name));
+SHOW ENGINE INNODB STATUS;
+ALTER TABLE department 
+ADD CONSTRAINT foreign_key_update
+PRIMARY KEY(dept_name);
+ALTER TABLE department  ADD CONSTRAINT foreign_key_update PRIMARY KEY(dept_name);
+CREATE TABLE faculty( id INT,name VARCHAR(20), dept_name VARCHAR(10), salary NUMERIC(5,0), PRIMARY KEY(id), FOREIGN KEY(dept_name) REFERENCES department(dept_name));
+INSERT INTO faculty(
+SF;
+INSERT INTO faculty( SF;
+INSERT INTO faculty VALUES(1,'Bhavya','CSE',60000);
+INSERT INTO faculty VALUES(1,'Prajwal','ESE',58000);
+INSERT INTO faculty VALUES(2,'Prajwal','ESE',58000);
+INSERT INTO faculty VALUES(2,'Prajwal','ECE',58000);
+INSERT INTO faculty VALUES(3,'KishoreBabu','EEE',65000);
+INSERT INTO faculty VALUES(4,'VamsiKrishna','Bio.Tech',50000);
+SELECT * FROM faculty;
+INSERT INTO faculty VALUES(5,'KrishnaPrasad','MECH',45000);
+SELECT * FROM faculty;
+SHOW TABLES;
+SELECT * FROM student,faculty WHERE faculty.dept_name=student.dept_name;
+SELECT * FROM student,faculty WHERE faculty.dept_name=student.dept_name AND salary>50000;
+exit();
+USE s;
+SHOW TABLES;
+SELECT * FROM student,faculty;
+SELECT * FROM student NATURAL JOIN faculty;
+exit();
+SHOW DATABASES;
+SELECT SAMPLE;
+USE sample;
+SHOW TABLES;
+DROP TABLE department;
+DROP TABLE course;
+DROP TABLE department;
+CREATE TABLE department (deptno NUMERIC(2,0), dname VARCHAR(20), loc VARCHAR(20), PRIMARY KEY(deptno) );
+SHOW TABLES;
+INSERT INTO department (10, 'Accounting', 'New York');
+INSERT INTO department VALUES(10, 'Accounting', 'New York');
+INSERT INTO department VALUES((20, 'Research', 'Dallas'),
+(30, 'Sales', 'Chicago'),
+(40, 'Operations', 'Boston') );
+INSERT INTO department VALUES((20, 'Research', 'Dallas'), (30, 'Sales', 'Chicago'), (40, 'Operations', 'Boston') );
+INSERT INTO department VALUES((20, 'Research', 'Dallas') );
+INSERT INTO department VALUES(20, 'Research', 'Dallas');
+INSERT INTO department VALUES(30, 'Sales', 'Chicago');
+INSERT INTO department VALUES(40, 'Operations', 'Boston');
+SELECT * FROM department;
+CREATE TABLE employee (empno NUMERIC(4,0), ename VARCHAR(20), job NUMERIC(4,0),
+USE sample;
+CREATE TABLE employee (empno NUMERIC(4,0), ename VARCHAR(20), job VARCHAR(20),
+mgr NUMERIC(4,0), hiredate DATE, sal INT, deptno NUMERIC(2,0), PRIMARY KEY empno,
+;
+CREATE TABLE employee (empno NUMERIC(4,0), ename VARCHAR(20), job VARCHAR(20), mgr NUMERIC(4,0), hiredate DATE, sal INT, deptno NUMERIC(2,0), PRIMARY KEY empno,;
+CREATE TABLE employee (empno NUMERIC(4,0), ename VARCHAR(20), job VARCHAR(20), mgr NUMERIC(4,0), hiredate DATE, sal INT, deptno NUMERIC(2,0), PRIMARY KEY(empno), 
+FOREIGN KEY(deptno) REFERENCES department;
+CREATE TABLE employee (empno NUMERIC(4,0), ename VARCHAR(20), job VARCHAR(20), mgr NUMERIC(4,0), hiredate DATE, sal INT, deptno NUMERIC(2,0), PRIMARY KEY(empno),  FOREIGN KEY(deptno) REFERENCES department;
+CREATE TABLE employee (empno NUMERIC(4,0), ename VARCHAR(20), job VARCHAR(20), mgr NUMERIC(4,0), hiredate DATE, sal INT, deptno NUMERIC(2,0), PRIMARY KEY(empno),  FOREIGN KEY(deptno) REFERENCES department);
+CREATE TABLE employee (empno NUMERIC(4,0), ename VARCHAR(20), job VARCHAR(20), mgr NUMERIC(4,0), hiredate DATE, sal INT, deptno NUMERIC(2,0), PRIMARY KEY(empno),  FOREIGN KEY(department.deptno) REFERENCES department);
+CREATE TABLE employee (empno NUMERIC(4,0), ename VARCHAR(20), job VARCHAR(20), mgr NUMERIC(4,0), hiredate DATE, sal INT, deptno NUMERIC(2,0), PRIMARY KEY(empno),  FOREIGN KEY(department.deptno) );
+CREATE TABLE employee (empno NUMERIC(4,0), ename VARCHAR(20), job VARCHAR(20), mgr NUMERIC(4,0), hiredate DATE, sal INT, deptno NUMERIC(2,0), PRIMARY KEY(empno),  FOREIGN KEY(deptno) REFERENCES department);
+CREATE TABLE employee (empno NUMERIC(4,0), ename VARCHAR(20), job VARCHAR(20), mgr NUMERIC(4,0), hiredate DATE, sal INT, deptno NUMERIC(2,0), PRIMARY KEY(empno),  FOREIGN KEY(deptno) REFERENCES department.deptno);
+SHOW TABLES;
+SELECT * FROM department;
+CREATE TABLE employee (empno NUMERIC(4,0), ename VARCHAR(20), job VARCHAR(20), mgr NUMERIC(4,0), hiredate DATE, sal INT, deptno NUMERIC(2,0), PRIMARY KEY(empno),  FOREIGN KEY(deptno) REFERENCES department(deptno) );
+show tables;
+USE sample;
+SHOW TABLES;
+INSERT INTO employee VALUES(7839
+KING
+PRESIDENT        ---
+17-11-1981
+5000
+10
+;
+INSERT INTO employee VALUES(7839 KING PRESIDENT        - 17-11-1981 5000  10;
+INSERT INTO employee VALUES(7839, 'KING', 'PRESIDENT', NULL, '1981-11-17', 5000, NULL, 10);
+DROP TABLE employee;
+CREATE TABLE employee (empno NUMERIC(4,0), ename VARCHAR(20), job VARCHAR(20), mgr NUMERIC(4,0), hiredate DATE, sal INT, comm INT, deptno NUMERIC(2,0), PRIMARY KEY(empno),  FOREIGN KEY(deptno) REFERENCES department(deptno) );
+INSERT INTO employee VALUES(7839, 'KING', 'PRESIDENT', NULL, '1981-11-17', 5000, NULL, 10);
+INSERT INTO employee VALUES(7698, 'BLAKE', 'MANAGER', 7839, '1981-05-01', 2850, NULL, 30);
+INSERT INTO employee VALUES(7782, 'CLARK', 'MANAGER', 7839, '1981-06-09', 2450, NULL, 10);
+INSERT INTO employee VALUES(7566, 'JONES', 'MANAGER', 7839, '1981-04-02', 2975, NULL, 20);
+INSERT INTO employee VALUES(7788, 'SCOTT', 'ANALYST', 7566, '1982-12-09', 3000, NULL, 20);
+INSERT INTO employee VALUES(7902, 'FORD', 'ANALYST', 7566, '1981-12-03', 3000, NULL, 20);
+INSERT INTO employee VALUES(7369, 'SMITH', 'CLERK', 7902, '1980-12-17', 800, NULL, 20);
+INSERT INTO employee VALUES(7499, 'ALLEN', 'SALESMAN', 7698, '1981-02-20', 1600, 300, 30);
+INSERT INTO employee VALUES(7499, 'WARD', 'SALESMAN', 7698, '1981-02-22', 1250, 500, 30);
+INSERT INTO employee VALUES(7521, 'WARD', 'SALESMAN', 7698, '1981-02-22', 1250, 500, 30);
+SELECT * FROM employee;
+INSERT INTO employee VALUES(7654, 'MARTIN', 'SALESMAN', 7698, '1981-09-28', 1250, 1400, 30);
+INSERT INTO employee VALUES(7844, 'TURNER', 'SALESMAN', 7698, '1981-09-08', 1500, 0, 30);
+INSERT INTO employee VALUES(7876, 'ADAMS', 'CLERK', 7788, '1983-01-12', 1100, NULL, 20);
+INSERT INTO employee VALUES(7900, 'JAMES', 'CLERK', 7698, '1981-12-03', 950, NULL, 30);
+INSERT INTO employee VALUES(7934, 'MILLER', 'CLERK', 7782, '1982-01-23', 1300, NULL, 10);
+SELECT * FROM employee;
+SELECT * FROM employee ORDER BY sal;
+SELECT * FROM employee ORDER BY sal DESC;
+SELECT empno, ename, sal FROM employee;
+SELECT * FROM employee WHERE job = 'MANAGER';
+SELECT ename FROM employee WHERE deptno =30 ;
+SELECT ename FROM employee WHERE ename LIKE 'S%';
+SELECT ename FROM employee WHERE ename LIKE '%A%';
+SELECT ename FROM employee WHERE ename LIKE '%JAN%';
+SELECT ename FROM employee WHERE hiredate LIKE '%JAN%';
+SELECT * FROM employee ORDER BY sal DESC;
+SELECT ename FROM employee WHERE hiredate LIKE '%1%';
+SELECT ename FROM employee WHERE hiredate LIKE '%01%';
+SELECT ename FROM employee WHERE MONTH(hiredate) = 01;
+SELECT ename FROM employee WHERE MONTH(hiredate) = JAN;
+SELECT ename FROM employee WHERE MONTH(hiredate) = 1;
+SELECT ename FROM employee WHERE YEAR(hiredate) = 1981;
+SELECT DISTINCT(job) FROM employee;
+SELECT DIST(job) FROM employee;
+SELECT ename FROM employee ORDER BY ename;
+SELECT ename FROM employee ORDER BY ename GROUP BY job;
+SELECT ename FROM employee GROUP BY job ORDER BY ename;
+SELECT * FROM employee GROUP BY job;
+SELECT ALL FROM employee GROUP BY job;
+SELECT ename FROM employee GROUP BY job;
+SELECT COUNT(ename) FROM employee GROUP BY job;
+SELECT ename FROM employee GROUP BY job;
+SELECT ename FROM employee GROUP BY job AND ename;
+SELECT ename FROM employee GROUP BY job OR ename;
+SELECT ename FROM employee GROUP BY job,ename;
+SELECT * FROM employee GROUP BY job,ename;
+SELECT * FROM employee GROUP BY ename,job;
+SELECT * FROM employee GROUP BY ename;
+SELECT * FROM employee GROUP BY job,ename;
+SELECT * FROM employee GROUP BY deptno,ename;
+SELECT empno, ename, sal, 0.15*sal AS da, 0.1*sal AS pf FROM employee;
+SELECT ename,hiredate FROM employee;
+SELECT ename, hiredate, FLOOR(DATEDIFF (NOW(), hiredate/365) ) FROM employee;
+SELECT ename, hiredate, TIMESTAMP( YEAR, hiredate, CURDATE() ) FROM employee;
+SELECT ename, hiredate, TIMESTAMPDIFF( YEAR, hiredate, CURDATE() ) FROM employee;
+SELECT ename, hiredate, TIMESTAMPDIFF( YEAR, hiredate, CURDATE() ) AS age   FROM employee;
+SELECT ename FROM employee WHERE comm = NULL;
+SELECT ename FROM employee WHERE comm IS NULL;
+SELECT ename FROM employee WHERE comm IS NULL OR comm = 0;
+SELECT ename FROM employee WHERE MGR IS NULL;
+SELECT MAX(sal), MIN(sal), AVG(sal) FROM employee;
+SELECT MAX(sal), MIN(sal), AVG(sal) FROM employee WHERE ename LIKE 'S%';
+SELECT DISTINCT(job) FROM employee;
+SELECT COUNT(DISTINCT(job)) FROM employee;
+SELECT COUNT(ename), AVG(sal) FROM employee;
+SELECT COUNT(ename), AVG(sal) FROM employee WHERE deptno = 30;
+SELECT deptno,COUNT(ename), AVG(sal) FROM employee WHERE deptno = 30;
+SELECT deptno FROM employee WHERE deptno = 30;
+SELECT MAX(sal), MIN(sal) FROM employee;
+SELECT MAX(sal), MIN(sal) FROM employee WHERE job = 'SALESMAN';
+(SELECT MAX(sal), MIN(sal) FROM employee WHERE job = 'SALESMAN') UNION (SELECT MAX(sal), MIN(sal) FROM employee WHERE job = 'CLERK') ;
+(SELECT job, MAX(sal), MIN(sal) FROM employee WHERE job = 'SALESMAN') UNION (SELECT job, MAX(sal), MIN(sal) FROM employee WHERE job = 'CLERK') ;
+SELECT YEAR(hiredate) FROM employee;
+SELECT job, MAX(sal), MIN(sal) FROM employee;
+SELECT job, MAX(sal), MIN(sal) FROM employee GROUP BY SALESMAN;
+SELECT job, MAX(sal), MIN(sal) FROM employee GROUP BY job;
+SELECT job, MAX(sal), MIN(sal) FROM employee GROUP BY job WHERE job = 'SALESMAN' OR job = 'CLERK';
+SELECT job, MAX(sal), MIN(sal) FROM employee GROUP BY job WHERE job = 'SALESMAN';
+SELECT job, MAX(sal), MIN(sal) FROM employee WHERE job = 'SALESMAN' GROUP BY job;
+SELECT job, MAX(sal), MIN(sal) FROM employee WHERE job = 'SALESMAN' OR JOB = 'CLERK' GROUP BY job;
+SELECT YEAR(hiredate),  FROM employee;
+SELECT YEAR(hiredate)  FROM employee;
+SELECT YEAR(hiredate) AS year,COUNT(ename), AVG(sal) FROM employee WHERE year = 81 OR year = 82 OR year = 83 ;
+SELECT YEAR(hiredate) AS year,COUNT(ename), AVG(sal) FROM employee WHERE year = 81 OR year = 82 OR year = 83 GROUP BY year;
+SELECT YEAR(hiredate) AS year,COUNT(ename), AVG(sal) FROM employee;
+SELECT YEAR(hiredate) AS year,COUNT(ename), AVG(sal) FROM employee GROUP BY year;
+SELECT YEAR(hiredate) AS year,COUNT(ename), AVG(sal) FROM employee WHERE year = 1981 GROUP BY year;
+SELECT YEAR(hiredate) AS year,COUNT(ename), AVG(sal) FROM employee WHERE YEAR(hiredate) = 81 OR 82 OR 83 GROUP BY year;
+SELECT YEAR(hiredate) AS year,COUNT(ename), AVG(sal) FROM employee WHERE YEAR(hiredate) = 1981 OR 1982 OR 1983 GROUP BY year;
+SELECT deptno,job FROM employee WHERE deptno = 20;
+DATE
+;
+CURDATE();
+SELECT CURDATE() FROM employee;
+SELECT DISTINCT CURDATE() FROM employee;
+SELECT DISTINCT NOW() FROM employee;
+SELECT DISTINCT NOW();
+DESCRIBE NOW();
+SELECT NOW();
+SELECT NOW;
+SELECT CURRENT_DATE;
+SELECT CURRENT_TIME;
+SELECT DATE_FORMAT(CURRENT_DATE, "%W %M %e %Y");
+SELECT DATE_FORMAT(CURRENT_DATE, "%D %b %e %V");
+SELECT DATE_FORMAT(CURRENT_DATE, "%D %b %V");
+SELECT DATE_FORMAT(CURRENT_DATE, "%D %b %Y");
+SELECT DATE_FORMAT(CURRENT_DATE, "%D %b %y");
+SELECT ename, hiredate, TIMESTAMPDIFF( YEAR, hiredate, CURDATE() ) FROM employee;
+SELECT ename, MONTH(hiredate
+DLO
+;
+SELECT ename, MONTH(hiredate DLO;
+SELECT ename, MONTH(hiredate) FROM employee;
+SELECT ename, MONTH(hiredate), DAY(hiredate)  FROM employee;
+SELECT ename, MONTH(hiredate), DAYNAME(hiredate)  FROM employee;
+SELECT ename, MONTH(hiredate) AS month, DAYNAME(hiredate) AS day  FROM employee WHERE month = 12 AND day = 'Monday' OR 'Friday';
+SELECT ename, MONTH(hiredate) AS month, DAYNAME(hiredate) AS day  FROM employee WHERE MONTH(hiredate) = 12 AND DAYNAME(hiredate) = 'Monday' OR 'Friday';
+SELECT ename, MONTH(hiredate), DAYNAME(hiredate) FROM employee WHERE MONTH(hiredate) = 12 AND DAYNAME(hiredate) = 'Monday' OR 'Friday';
+SELECT ename, MONTH(hiredate), DAYNAME(hiredate) FROM employee WHERE MONTH(hiredate) = 12 AND DAYNAME(hiredate) = "Monday" OR "Friday";
+SELECT ename, MONTH(hiredate), DAYNAME(hiredate) FROM employee WHERE MONTH(hiredate) = 12 ;
+SELECT ename, MONTH(hiredate), DAYNAME(hiredate) FROM employee WHERE DAYNAME(hiredate) = "Monday" OR "Friday";
+SELECT ename, MONTH(hiredate), DAYNAME(hiredate) FROM employee WHERE DAYNAME(hiredate) = "Monday" AND "Friday";
+SELECT ename, MONTH(hiredate), DAYNAME(hiredate) FROM employee WHERE DAYNAME(hiredate) = "Monday" OR "Friday";
+SELECT ename, MONTH(hiredate), DAYNAME(hiredate) FROM employee WHERE DAYNAME(hiredate) = "Monday" OR DAYNAME(hiredate) = "Friday";
+SELECT ename, MONTH(hiredate), DAYNAME(hiredate) FROM employee WHERE MONTH(hiredate) = 12 AND DAYNAME(hiredate) = "Monday" OR DAYNAME(hiredate) = "Friday";
+SELECT ename, MONTH(hiredate), DAYNAME(hiredate) FROM employee WHERE MONTH(hiredate) = 12 AND (DAYNAME(hiredate) = "Monday" OR DAYNAME(hiredate) = "Friday");
+SHOW DATABASES;
+\H
+;
+\h
+\r
+\R
+SHOW DATABASES;
+USE test;
+USE sample;
+SELECT ename FROM employee WHERE hiredate LIKE '%04-8[12]';
+SELECT ename FROM employee WHERE hiredate LIKE '%04-81';
+SELECT ename FROM employee WHERE hiredate LIKE '%04-1981';
+SELECT * FROM employee;
+SELECT ename FROM employee WHERE hiredate LIKE '1981-04-%';
+SELECT ename FROM employee WHERE hiredate LIKE '198[12]-04-%';
+SELECT ename FROM employee WHERE hiredate LIKE '1981-04-%' OR '1982-04-%';
+SELECT ename FROM employee WHERE hiredate LIKE '1981-04-%' OR hiredate LIKE  '1982-04-%';
+SELECT deptno, MAX(sal), MIN(sal), AVG(sal) FROM employee WHERE deptno IN (10, 30) ORDER BY deptno;
+SELECT deptno, MAX(sal), MIN(sal), AVG(sal) FROM employee WHERE deptno = ALL (10, 30) ORDER BY deptno;
+SELECT deptno, MAX(sal), MIN(sal), AVG(sal) FROM employee WHERE deptno IN (10) ORDER BY deptno;
+SELECT deptno, MAX(sal), MIN(sal), AVG(sal) FROM employee WHERE deptno IN (10, 30) ORDER BY deptno;
+SELECT deptno, MAX(sal), MIN(sal), AVG(sal) FROM employee WHERE deptno IN (30, 10) ORDER BY deptno;
+SELECT deptno, MAX(sal), MIN(sal), AVG(sal) FROM employee WHERE deptno IN (30, 10) GROUP BY deptno;
+SELECT job, dept FROM employee WHERE deptno = 30 AND deptno <> 20;
+SELECT job, deptno FROM employee WHERE deptno = 30 AND deptno <> 20;
+SELECT DISTINCT(job), deptno FROM employee WHERE deptno = 30 AND deptno <> 20;
+SELECT * FROM employee;
+SELECT COUNT(empno), deptno FROM employee GROUP BY deptno;
+SELECT COUNT(empno), YEAR(hiredate) FROM employee GROUP BY YEAR(hiredate);
+SELECT COUNT(empno),job FROM employee GROUP BY job;
+SELECT deptno, MAX(sal), MIN(sal), AVG(sal) FROM employee GROUP BY deptno;
+SELECT job, MAX(sal), MIN(sal), AVG(sal) FROM employee GROUP BY job;
+SELECT job, MAX(sal), MIN(sal), AVG(sal) FROM employee GROUP BY job WHERE job IN('MANAGER', 'CLERK');
+SELECT job, MAX(sal), MIN(sal), AVG(sal) FROM employee WHERE job IN('MANAGER', 'CLERK') GROUP BY job;
+SELECT 'SRI '+ename FROM employee;
+SELECT 'SRI '^ename FROM employee;
+SELECT 'SRI ename' FROM employee;
+SELECT 'SRI 'ename FROM employee;
+SELECT deptno, MAX(sal), MIN(sal), AVG(sal) FROM employee GROUP BY deptno HAVING COUNT(ename) >=3;
+SELECT job, COUNT(ename) FROM employee GROUP BY job;
+SELECT mgr, COUNT(empno) FROM employee GROUP BY mgr ORDER BY mgr;
+SELECT * FROM employee;
+SELECT mgr FROM employee GROUP BY mgr;
+SELECT mgr, COUNT(mgr) FROM employee GROUP BY mgr;
+SELECT mgr, COUNT(mgr) FROM employee WHERE COUNT(mgr) >= 3 GROUP BY mgr;
+SELECT mgr, COUNT(mgr) FROM employee WHERE COUNT(mgr) >= 3 ;
+SELECT mgr, COUNT(mgr) FROM employee WHERE COUNT(mgr) >= 3 GROUP BY mgr;
+SELECT mgr, COUNT(mgr) FROM employee GROUP BY mgr;
+SELECT * FROM (SELECT mgr, COUNT(mgr) AS cnt FROM employee GROUP BY mgr) WHERE cnt >= 3;
+SELECT * FROM (SELECT mgr, COUNT(mgr) AS cnt FROM employee GROUP BY mgr);
+SELECT mgr, COUNT(mgr) AS cnt FROM employee GROUP BY mgr;
+SELECT * FROM (SELECT mgr, COUNT(mgr) AS cnt FROM employee GROUP BY mgr) AS der_table WHERE cnt >= 3;
+SELECT deptno,COUNT(empno) FROM employee GROUP BY deptno;
+SELECT deptno,COUNT(empno) AS cnt FROM employee GROUP BY deptno HAVING cnt>= 3;
+SELECT job,COUNT(job) AS cnt FROM employee GROUP BY job HAVING cnt >= 3;
+SELECT MONTH(hiredate), COUNT(MONTH(hiredate)) FROM employee GROUP BY MONTH(hiredate);
+SELECT MONTH(hiredate), COUNT(MONTH(hiredate)) AS cnt FROM employee GROUP BY MONTH(hiredate) HAVING cnt >= 3;
+SELECT hiredate, COUNT(hiredate) AS cnt FROM employee GROUP BY hiredate; 
+SELECT hiredate, COUNT(hiredate) AS cnt FROM employee GROUP BY hiredate HAVING cnt >=2 ; 
+SELECT deptno, COUNT(deptno) FROM employee GROUP BY deptno;
+SELECT deptno, COUNT(deptno), TIMESTAMPDIFF(YEAR,hiredate,CURRENT_DATE) AS exp FROM employee GROUP BY deptno;
+SELECT deptno, COUNT(deptno) AS cnt, TIMESTAMPDIFF(YEAR,hiredate,CURRENT_DATE) AS exp FROM employee GROUP BY deptno HAVING cnt >= 3 AND exp >= 17;
+SELECT deptno, COUNT(deptno) AS cnt, TIMESTAMPDIFF(YEAR,hiredate,CURRENT_DATE) AS exp FROM employee GROUP BY deptno HAVING cnt >= 3 AND exp >= 37;
+SELECT deptno, COUNT(deptno) AS cnt, TIMESTAMPDIFF(YEAR,hiredate,CURRENT_DATE) AS exp FROM employee GROUP BY deptno HAVING cnt >= 5 AND exp >= 37;
+SELECT ename, hiredate FROM employee ORDER BY enmae;
+SELECT DISTINCT(job), deptno FROM employee WHERE deptno = 30 AND deptno <> 20;
+SELECT * FROM employee;
+SELECT * FROM employee WHERE deptno = 30;
+SELECT DISTINCT(job), deptno FROM employee WHERE deptno = 30 AND deptno <> 20;
+SELECT DISTINCT(job), deptno FROM employee WHERE deptno = 30 AND deptno <> 20 GROUP BY deptno;
+SELECT DISTINCT(job), deptno FROM employee WHERE deptno = 30 GROUP BY deptno;
+SELECT job, deptno FROM employee;
+SELECT job, deptno FROM employee GROUP BY deptno;
+SELECT * FROM (SELECT DISTINCT(JOB) FROM EMPLOYEE WHERE DEPTNO=30) MINUS (SELECT DISTINCT(JOB) FROM EMPLOYEE WHERE DEPTNO=20);
+SELECT * FROM (SELECT DISTINCT(JOB) FROM EMPLOYEE WHERE DEPTNO=30) EXCEPT (SELECT DISTINCT(JOB) FROM EMPLOYEE WHERE DEPTNO=20);
+USE sample;
+SELECT * FROM employee;
+SELECT DATE_FORMAT(hiredate,'%Y-%m-%d') AS showdate FROM employee ORDER BY hiredate DESC
+;
+SELECT ROUND (AVG(sal), 3) FROM employee GROUP BY dept; 
+SELECT ROUND (AVG(sal), 3) FROM employee GROUP BY deptno; 
+SELECT AVG(sal) FROM employee GROUP BY deptno; 
+SELECT ROUND (AVG(sal), 6) FROM employee GROUP BY deptno; 
+SELECT SYSDATE DUAL;
+SELECT SYSDATE FROM DUAL;
+SELECT CURRENT_DATE FROM DUAL;
+SELECT CURRENT_DATE FROM employee;
+SELECT ename, TO_DAYS(hiredate) FROM employee;
+SELECT MONTH(hiredate) FROM employee;
+SELECT MONTHNAME(hiredate) FROM employee;
+SELECT YEARNAME(hiredate) FROM employee;
+SELECT DAYNAME(hiredate) FROM employee;
+SELECT DATENAME(hiredate) FROM employee;
+SELECT DATE(hiredate) FROM employee;
+SELECT DAY(hiredate) FROM employee;
+SELECT hiredate, (' Rs. '|| (to_char(to_date(sal,'j'), 'Jsp'))|| ' only.'))
+;
+SELECT hiredate, (' Rs. '|| (to_char(to_date(sal,'j'), 'Jsp'))|| ' only.')) AS sal_in_words FROM employee;
+SELECT hiredate, (' Rs. '|| (to_char(to_date(sal,'j'), 'Jsp'))|| ' only.') AS sal_in_words FROM employee;
+USE sanple;
+USE sample;
+SELECT * FROM employee;
+SELECT ename, hiredat FROM employee;
+SELECT ename, hiredatE FROM employee;
+select to_char(to_date(:hiredate,'j'),'jsp') from dual;
+select to_char(to_date(:hiredate,'j'),'jsp') from employee;
+select to_char(to_date(hiredate,'j'),'jsp') from employee;
+SELECT CONCAT(empno, ' ', ename) FROM employee;
+SELECT CONCAT(empno, '-->', ename) FROM employee;
+SELECT CONCAT(empno, ' --> ', ename) FROM employee;
+SELECT ename, hiredate, DATE_FORMAT(hiredate, '%W %M %Y') FROM employee;
+SELECT ename, hiredate, DATE_FORMAT(hiredate, '%D %W %M %Y') FROM employee;
+SELECT ename, DATE_FORMAT(hiredate, '%D %W %M %Y') FROM employee WHERE job = 'MANAGER';
+SELECT CONCAT(ename, '--', job, '---', salary)
+;
+SELECT CONCAT(ename, '--', job, '---', salary) FROM employee;
+SELECT CONCAT(ename, '--', job, '---', sal) FROM employee;
+SELECT ename,
+ROUND(
+(LENGTH(ename) - LENGTH( REPLACE(ename, 'I', '') )) / LENGTH('I')
+) AS count
+FROM employee;
+SELECT ename, ROUND( (LENGTH(ename) - LENGTH( REPLACE(ename, 'I', '') )) / LENGTH('I') ) AS count FROM employee;
+SELECT ename, LOACATE(ename, 'I') FROM employee;
+SELECT ename, LOCATE(ename, 'I') FROM employee;
+SELECT ename, LOCATE('I', ename) FROM employee;
+SELECT ename, LOCATE('I', ename) FROM employee;SELECT ename, LOCATE('I', ename) FROM employee;SELECT ename, LOCATE('I', ename) FROM employee;SELECT ename, LOCATE('I', ename) FROM employee;SELECT ename, LOCATE('I', ename) FROM employee;SELECT ename, LOCATE('I', ename) FROM employee;SELECT ename, LOCATE('I', ename) FROM employee;SELECT ename, LOCATE('I', ename) FROM employee;
+SELECT ename, ROUND( (LENGTH(ename) - LENGTH( REPLACE(ename, 'I', '') )) / LENGTH('I') ) AS count FROM employee;
+SELECT ename, LOCATE('I', ename, 6) FROM employee;
+SELECT ename, LOCATE('I', ename) FROM employee;
+SELECT ename, LEFT(ename)
+;
+SELECT ename, LEFT(ename) FROM employee;
+SELECT * FROM employee;
+SELECT ename, LEFT(ename) FROM employee;
+SELECT ename FROM employee;
+SELECT ename,LEFT() FROM employee;
+SELECT ename, SUBSTRING(ename, 1, LENGTH(ename) -1 ) FROM employee;
+SELECT ename, SUBSTRING(ename, 2, LENGTH(ename) -1 ) FROM employee;
+SELECT * FROM employee;
+SELECT job FROM employee WHERE deptno IN (10, 30) GROUP BY deptno
+;
+SELECT deptno, job FROM employee WHERE deptno IN (10, 30) GROUP BY deptno;
+SELECT deptno, job FROM employee WHERE deptno IN (10, 30);
+SELECT deptno, job FROM employee ;
+SELECT deptno, job FROM employee WHERE deptno=30;
+SELECT deptno, job FROM employee WHERE deptno=20;
+(SELECT job FROM employee WHERE deptno=30) - (SELECT job FROM employee WHERE deptno=20);
+(SELECT job FROM employee WHERE deptno=30) EXCEPT (SELECT job FROM employee WHERE deptno=20);
+(SELECT DISTINCT(job) FROM employee WHERE deptno=30) - (SELECT DISTINCT(job) FROM employee WHERE deptno=20);
+SELECT deptno, DISTINCT(job) FROM employee WHERE deptno=30;
+SELECT deptno, job FROM employee GROUP BY job HAVING deptno = 30;
+SELECT deptno, job FROM employee WHERE deptno=30;
+(SELECT job FROM employee WHERE deptno=30) EXCEPT (SELECT job FROM employee WHERE deptno=20);
+SELECT deptno FROM employee 
+EXCEPT
+SELECT deptno FROM department;
+SELECT deptno FROM employee  EXCEPT SELECT deptno FROM department;
+(SELECT deptno FROM employee)  EXCEPT (SELECT deptno FROM department);
+(SELECT job FROM employee WHERE deptno=30) EXCEPT (SELECT job FROM employee WHERE deptno=20);
+(SELECT job FROM employee WHERE deptno=30) UNION  (SELECT job FROM employee WHERE deptno=20);
+(SELECT job FROM employee WHERE deptno=30) UNION ALL (SELECT job FROM employee WHERE deptno=20);
+(SELECT job FROM employee WHERE deptno=30) EXCEPT  (SELECT job FROM employee WHERE deptno=20);
+(SELECT job FROM employee WHERE deptno=30) -  (SELECT job FROM employee WHERE deptno=20);
+SELECT job FROM employee WHERE deptno=30 AND job NOT IN (SELECT job FROM employee WHERE deptno=20);
+SELECT deptno, job FROM employee WHERE deptno=30;
+SELECT deptno, job FROM employee WHERE deptno=20;
+SELECT job FROM employee WHERE deptno=30 AND job NOT IN (SELECT job FROM employee WHERE deptno=20);
+SELECT DISTINCT(job) FROM employee WHERE deptno=30 AND job 
+(SELECT DISTINCT(job) FROM employee WHERE deptno=30 AND job) LEFT JOIN (SELECT DISTINCT(job) FROM employee WHERE deptno=20);
+SELECT job FROM employee WHERE deptno=30 AND job NOT IN (SELECT job FROM employee WHERE deptno=20);
+(SELECT DISTINCT(job) FROM employee WHERE deptno=30 AND 
+;
+SELECT DISTINC(job) FROM employee e1 LEFT JOIN 
+;
+SELECT DISTINC(job) FROM employee e1 LEFT JOIN empLoyee e2 ON e2.deptn0 = e1.deptno;
+SELECT DISTINC(job) FROM employee e1 LEFT JOIN employee e2 ON e2.deptn0 = e1.deptno;
+SELECT DISTINCT(job) FROM employee e1 LEFT JOIN employee e2 ON e2.deptn0 = e1.deptno;
+SELECT DISTINCT(e1.job) FROM employee e1 LEFT JOIN employee e2 ON e2.deptn0 = e1.deptno;
+SELECT DISTINCT(e1.job) FROM employee e1 LEFT JOIN employee e2 ON e2.deptnO = e1.deptno;
+SELECT DISTINCT(e1.job) FROM employee e1 LEFT JOIN employee e2 ON e2.deptnO = e1.deptno WHERE e1.deptno != e2.deptno;
+SELECT DISTINCT(e1.job) FROM employee e1 LEFT JOIN employee e2 ON e2.deptnO = e1.deptno WHERE e1.deptno = 30 AND e2.deptno <> 20;
+USE sample;
+SELECT * FROM employee;
+SELECT * FROM department;
+SELECT ename, deptno, dname FROM employee NATURAL JOIN department;
+SELECT ename, dname FROM employee NATURAL JOIN department;
+SELECT ename, sal, deptno FROM employee;
+SELECT ename, sal, dname FROM employee NATURAL JOIN department;
+SELECT ename, dname, deptno FROM employee NATURAL JOIN department;
+SELECT a.ename, m.ename FROM employee AS a, employee AS m WHERE a.mgr = m.ename; 
+SELECT a.ename, m.ename FROM employee AS a NATURAL JOIN employee AS m WHERE a.mgr = m.ename; 
+SELECT a.ename, m.ename FROM (employee AS a), (employee AS m) WHERE a.mgr = m.ename;
+SHOW ENGINE INNODB STATUS;
+SELECT T.ename FROM employee AS T;
+SELECT T.ename, S.ename FROM employee AS T, empLoyee AS S;
+SELECT T.ename, S.ename FROM employee AS T, employee AS S;
+SELECT T.ename, S.ename FROM employee AS T, employee AS S WHERE T.ename = S.mgr;
+SELECT T.ename, S.ename FROM employee AS T, employee AS S WHERE T.mgr = S.empno;
+SELECT T.ename AS emp, S.ename AS manager FROM employee AS T, employee AS S WHERE T.mgr = S.empno;
+SELECT job, ename, dname FROM employee NATURAL JOIN deptno;
+SELECT job, ename, dname FROM employee NATURAL JOIN department;
+SELECT job, ename, dname FROM employee NATURAL JOIN department WHERE job = 'MANAGER';
+SHOW DATABASES;
+SELECT sample
+;
+USE sample;
+SHOW TABLES;
+STOP
+;
+EXIT;
+USE SAMPLE;
+USE sample;
+SHOW TABLES;
+SELECT * FROM employee
+;
+ALTER employee ADD grade NUMERIC(1,0);
+ALTER TABLE employee ADD grade NUMERIC(1,0);
+SELECT * FROM employee;
+UPDATE employee SET grade = 1 WHERE deptno = 10;
+SELECT * FROM employee;
+UPDATE employee SET grade = 2 WHERE deptno = 20;
+UPDATE employee SET grade = 3 WHERE deptno = 30;
+SELECT * FROM employee;
+UPDATE employee SET   WHERE deptno = 30;
+UPDATE employee SET grade = 2 WHERE job = 'MANAGER'
+SD
+;
+UPDATE employee SET grade = 2 WHERE job = 'MANAGER' SD;
+UPDATE employee SET grade = 2 WHERE job = 'MANAGER' AND deptno = 10;
+SELECT * FROM employee;
+UPDATE employee SET grade = 3 WHERE job = 'CLERK' AND deptno = 10;
+SELECT * FROM employee;
+UPDATE employee SET grade = 1 WHERE job = 'MANAGER' AND deptno = 20;
+SELECT * FROM employee;
+UPDATE employee SET grade = 2 WHERE job = 'ANAYLST' AND deptno = 20;
+UPDATE employee SET grade = 3 WHERE job = 'CLERK' AND deptno = 20;
+SELECT * FROM employee;
+SELECT * FROM employee WHERE deptno = 20;
+SELECT * FROM employee WHERE deptno = 30;
+UPDATE employee SET grade = 1 WHERE job = 'MANAGER' AND deptno = 30;
+SELECT * FROM employee WHERE deptno = 30;
+UPDATE employee SET grade = 2 WHERE job = 'SALESMAN' AND deptno = 30;
+SELECT * FROM employee WHERE deptno = 30;
+SELECT * FROM employee;
+SELECT ename, job, grade FROM employee WHERE job = 'MANAGER' ORDER BY grade;
+SELECT ename, job,deptno,  grade FROM employee WHERE job = 'MANAGER' ORDER BY grade;
+SELECT ename, comm, grade FROM employee WHERE comm IS NOT NULL AND comm <> 0;
+SELECT P.ename, P.job, Q.ename 
+;
+SELECT P.ename, P.job, Q.ename FROM emplpoyee AS P NATURAL JOIN employee AS Q;
+SELECT P.ename, P.job, Q.ename FROM employee AS P NATURAL JOIN employee AS Q;
+SELECT P.ename, P.job, Q.ename FROM employee AS P NATURAL JOIN employee AS Q WHERE P.job = 'MANAGER';
+SELECT P.ename, P.job, Q.ename FROM employee AS P, employee AS Q WHERE P.mgr = Q.empno AND P.job = 'MANAGER';
+SELECT * FROM employee;
+SELECT ename FROM employee
+;
+SELECT P.ename, P.mgr, P.deptno, Q.ename, Q.deptno FROM employee AS P, employee AS Q WHERE P.mgr = Q.empno AND P.deptno = Q. 
+;
+SELECT P.ename, P.mgr, P.deptno, Q.ename, Q.deptno FROM employee AS P, employee AS Q WHERE P.mgr = Q.empno AND P.deptno = Q;
+SELECT P.ename, P.mgr, P.deptno, Q.ename, Q.deptno FROM employee AS P, employee AS Q WHERE P.mgr = Q.empno AND P.deptno = Q.deptno;
+SELECT P.ename, P.mgr, P.deptno, Q.empno, Q.ename, Q.deptno FROM employee AS P, employee AS Q WHERE P.mgr = Q.empno AND P.deptno = Q.deptno;
+SELECT P.ename, P.mgr, P.deptno, Q.empno, Q.ename, Q.deptno FROM employee AS P, employee AS Q WHERE P.mgr = Q.empno AND P.deptno <> Q.deptno;
+SELECT ename, deptno FROM employee 
+;
+SELECT P.ename, deptno FROM employee AS P
+;
+SELECT ename, employee.deptno, department.deptno FROM employee NATURAL JOIN department
+;
+SELECT ename, employee.deptno, department.deptno FROM employee NATURAL JOIN department WHERE ename REGEXP '^[MI]';
+SELECT ename[0], employee.deptno, department.deptno FROM employee NATURAL JOIN department;
+SELECT LEFT(ename,1), employee.deptno, department.deptno FROM employee NATURAL JOIN department;
+SELECT LEFT(ename,1), employee.deptno, department.deptno FROM employee NATURAL JOIN department WHERE LEFT(ename,1) = LEFT(department.deptno, 1);
+SELECT LEFT(employee.ename,1), employee.deptno, department.deptno, LEFT(department.deptno, 1) FROM employee NATURAL JOIN department WHERE LEFT(ename,1) = LEFT(department.deptno, 1);
+SELECT LEFT(employee.ename,1), employee.deptno, department.deptno FROM employee NATURAL JOIN department WHERE LEFT(ename,1) = LEFT(department.deptno, 1);
+SELECT LEFT(ename,1), employee.deptno, department.deptno FROM employee NATURAL JOIN department WHERE LEFT(ename,1) = LEFT(department.deptno, 1);
+SELECT LEFT(employee.ename,1), employee.deptno, department.deptno FROM employee NATURAL JOIN department WHERE LEFT(ename,1) = LEFT(department.dname, 1);
+SELECT LEFT(employee.ename,1), employee.deptno, dname, FROM employee NATURAL JOIN department WHERE LEFT(ename,1) = LEFT(dname, 1);
+SELECT LEFT(dname, 1) FROM department;
+SELECT LEFT(ename,1) AS G FROM employee WHERE G IN(SELECT LEFT(dname, 1) AS F FROM department);
+SELECT LEFT(ename,1) AS G FROM employee WHERE LEFT(enmae,1) IN(SELECT LEFT(dname, 1) AS F FROM department);
+SELECT LEFT(ename,1) AS G FROM employee WHERE LEFT(ename,1) IN(SELECT LEFT(dname, 1) AS F FROM department);
+SELECT ename FROM employee WHERE LEFT(ename,1) IN(SELECT LEFT(dname, 1) AS F FROM department);
+SELECT ename, MONTH(hiredate) FROM employee;
+SELECT ename, MONTH_NAME(hiredate) FROM employee;
+SELECT ename, MONTH(hiredate) FROM employee;
+SELECT ename, MONTH(hiredate), CURRENT_MONTH FROM employee;
+SELECT ename, MONTH(hiredate), CURRENT FROM employee;
+SELECT ename, MONTH(hiredate), MONTH(CURRENT_DATE) FROM employee;
+SELECT ename, MONTH(hiredate), MONTH(CURRENT_DATE) FROM employee WHERE MONTH(hiredate) = MONTH(CURRENT_DATE);
+SELECT ename, MONTH(hiredate), MONTH(CURRENT_DATE) FROM employee WHERE MONTH(hiredate) = MONTH(CURRENT_DATE) AND grade = YEAR(hiredate);
+SELECT YEAR(hiredate0 FROM employee;
+SELECT YEAR(hiredate) FROM employee;
+SELECT ename, MONTH(hiredate), MONTH(CURRENT_DATE) FROM employee WHERE MONTH(hiredate) = MONTH(CURRENT_DATE) AND grade = RIGHT( YEAR(hiredate), 1);
+SELECT RIGHT(YEAR(hiredate),1) FROM employee;
+SELECT ename, MONTH(hiredate), MONTH(CURRENT_DATE), grade FROM employee WHERE MONTH(hiredate) = MONTH(CURRENT_DATE);
+SELECT ename, MONTH(hiredate), MONTH(CURRENT_DATE), grade, YEAR(hiredate) FROM employee WHERE MONTH(hiredate) = MONTH(CURRENT_DATE);
+SELECT ename, MONTH(hiredate), MONTH(CURRENT_DATE) FROM employee WHERE MONTH(hiredate) = MONTH(CURRENT_DATE) AND grade = RIGHT( YEAR(hiredate), 1);
+SELECT T.ename, T.grade, S.ename, S.grade FROM employee AS T, employee AS S; 
+SELECT T.ename, T.grade, S.ename, S.grade FROM employee AS T, employee AS S WHERE T.mgr = S.empno AND ; 
+SELECT ename, empno, mgr, grade FROM employee;
+SELECT ename, empno, mgr, grade FROM employee WHERE empno%2 = mgr%2;
+SELECT ename, empno, mgr, grade FROM employee WHERE empno%2 = mgr%2 = grade%2;
+SELECT ename, empno, mgr, grade FROM employee WHERE empno%2 = mgr%2 AND empno%2 = grade%2;
+SELECT ename, grade, deptno FROM employee;
+SELECT ename, grade, deptno, FROM employee WHERE grade = LEFT(deptno, 1);
+SELECT ename, grade, deptno, FROM employee WHERE grade = deptno/10;
+SELECT ename, grade, deptno FROM employee;
+SELECT deptno/10 FROM employee;
+SELECT ename, grade, deptno, FROM employee WHERE grade = ROUND(deptno/10,1);
+SELECT ROUND(deptno/10,1) FROM employee;
+SELECT ename, grade, deptno, FROM employee WHERE grade = (deptno/10);
+SELECT ename, grade, deptno, FROM employee WHERE grade = 2;
+SELECT ename, grade FROM employee WHERE deptno = 10;
+SELECT ename, grade FROM employee WHERE grade = 2;
+SELECT ename, grade, deptno, FROM employee WHERE grade = 2;
+SELECT ename, grade FROM employee WHERE grade = 2;
+SELECT ename, grade FROM employee WHERE 10*grade = deptno;
+SELECT ename, grade, deptno FROM employee WHERE 10*grade = deptno;
+SELECT * FROM department;
+SELECT ename, dname, loc FROM employee NATURAL JOIN department;
+SELECT ename, dname, loc FROM employee NATURAL JOIN department WHERE LENGTH(ename) = LENGTH(dname) AND LENGTH(ename) = LENGTH(loc);
+SELECT ename, hiredate FROM employee WHERE MONTH(hiredate) = grade;
+SELECT ename, hiredate, grade FROM employee WHERE MONTH(hiredate) = grade;
+SELECT T.ename, T.job, S.job FROM employee AS T, employee AS S WHERE T.mgr = S.empno AND S.job = 'ANALYST' 
+;
+SELECT T.ename,T.grade, S.ename,S.grade FROM employee AS T, employee AS S WHERE T.mgr = S.empno AND T.grade = S.grade;
+SELECT T.ename
+;
+SELECT T.ename, T.hiredate, S.ename, S.hiredate FROM employee AS T, employee AS S;
+SELECT T.ename, T.hiredate, S.ename, S.hiredate FROM employee AS T, employee AS S WHERE T.mgr = S.empno AND T.hiredate>S.hiredate ;
+SELECT T.ename, T.hiredate, S.ename, S.hiredate FROM employee AS T, employee AS S WHERE T.mgr = S.empno AND T.hiredate<S.hiredate ;
+SHOW DATABASES;
+select sample;
+use sample;
+show tables;
+DESCRIBE student;
+DESCRIBE employee;
+SHOW DATABASES;
+USE sample;
+SHOW TABLES;
+SELECT * FROM student;
+SELECT * FROM department;
+SELECT * FROM employee;
+SHOW DATABASES;
+USE information_schema;
+SHOW TABLES;
+SELECT * FROM USER_PRIVILEGES;
+DESCRIBE USER_PRIVILEGES
+;
+SHOW DATABASES;
+USE sample;
+SHOW TABLES;
+SHOW DATABASES;
+CREATE DATABASE mysql_assgn_2;
+SHOW DATABASES;
+USE mysql_assgn-2;
+SHOW TABLES;
+USE mysql_assgn-2;
+SHOW TABLES;
+CREATE TABLE employee (empno NUMERIC(4,0), ename VARCHAR(20), job VARCHAR(20), mgr NUMERIC(4,0), hiredate DATE, sal INT, deptno NUMERIC(2,0), PRIMARY KEY(empno),  FOREIGN KEY(deptno) REFERENCES department(deptno);
+SHOW DATABASES;
+USE mysql_assgn-2;
+USE mysql_assgn_2;
+CREATE TABLE programmer (
+pname VARCHAR(20) NOT NULL PRIMARY KEY,
+dob DATE NOT NULL,
+doj DATE NOT NULL,
+sex ENUM('M', 'F') NOT NULL,
+prof1 VARCHAR(20),
+prof2 VARCHAR(20),
+salary INT NOT NULL);
+CREATE TABLE programmer ( pname VARCHAR(20) NOT NULL PRIMARY KEY, dob DATE NOT NULL, doj DATE NOT NULL, sex ENUM('M', 'F') NOT NULL, prof1 VARCHAR(20), prof2 VARCHAR(20), salary INT NOT NULL);
+SHOW TABLES;
+INSERT INTO programmer VALUES(ANAND
+12-APR-66
+21-APR-92
+M
+PASCAL
+BASIC
+3200
+);
+INSERT INTO programmer VALUES(ANAND 12-APR-66 21-APR-92 M PASCAL BASIC 3200 );
+INSERT INTO programmer VALUES('ANAND', '1966-04-12', '1992-04-21', 'M','PASCAL', 'BASIC', 3200 );
+SELECT * FROM programmer;
+INSERT INTO programmer VALUES('ALTAF', '1964-06-02', '1990-11-13', 'M','CLIPPER', 'COBOL', 2800 );
+INSERT INTO programmer VALUES('ALTAF', '1960-01-31', '1990-04-21', 'F','COBOL', 'DBASE', 3000 );
+INSERT INTO programmer VALUES('JULIANA', '1960-01-31', '1990-04-21', 'F','COBOL', 'DBASE', 3000 );
+INSERT INTO programmer VALUES('KAMALA', '1968-10-30', '1992-01-02', 'F','C', 'DBASE', 2900 );
+SELECT * FROM programmer;
+INSERT INTO programmer VALUES('MARY', '1970-06-24', '1991-02-01', 'F','CPP', 'ORACLE', 4500 );
+INSERT INTO programmer VALUES('NELSON', '1985-09-11', '1989-03-11', 'M','COBOL', 'DBASE', 2500 );
+SELECT * FROM programmer;
+INSERT INTO programmer VALUES('PATTRICK', '1965-11-10', '1990-04-21', 'M','PASCAL', NULL, 2800 );
+INSERT INTO programmer VALUES('QADIR', '1965-08-31', '1990-04-21', 'M','ASSEMBLY', 'C', 3000 );
+INSERT INTO programmer VALUES('RAMESH', '1967-05-03', '1991-02-26', 'M','PASCAL', 'DBASE', 3200 );
+INSERT INTO programmer VALUES('REBECCA', '1967-01-01', '1990-12-01', 'F','BASIC', 'COBOL', 2500 );
+INSERT INTO programmer VALUES('REVATHI', '1970-04-19', '1993-04-20', 'F','C', 'ASSEMBLY', 3000 );
+UPDATE programmer SET pname = 'REMITHA' WHERE pname = 'REVATHI';
+SELECT * FROM programmer;
+INSERT INTO programmer VALUES('REVATHI', '1969-12-02', '1992-01-02', 'F','PASCAL', 'BASIC', 3200 );
+INSERT INTO programmer VALUES('VIJAYA', '1965-12-14', '1992-05-02', 'F','FOXPRO', 'C', 4500 );
+SELECT * FROM programmer;
+SELECT COUNT(*) FROM programmer;
+CREATE TABLE studies(
+pname VARCHAR(20) PRIMARY KEY FOREIGN KEY REFERENCES(programmer.pname),
+institute VARCHAR(30) NOT NULL,
+course VARCHAR(20) NOT NULL,
+coursefee INT NOT NULL);
+CREATE TABLE studies( pname VARCHAR(20) PRIMARY KEY FOREIGN KEY REFERENCES(programmer.pname), institute VARCHAR(30) NOT NULL, course VARCHAR(20) NOT NULL, coursefee INT NOT NULL);
+CREATE TABLE studies( pname VARCHAR(20) PRIMARY KEY FOREIGN KEY REFERENCES(programmer.pname), institute VARCHAR(30) NOT NULL, cour[1;5Dse VARCHAR(20) NOT NULL, coursefee INT NOT NULL);
+CREATE TABLE studies( pname VARCHAR(20) PRIMARY KEY, institute VARCHAR(30) NOT NULL, course VARCHAR(20) NOT NULL, coursefee INT NOT NULL, FOREIGN KEY(pname) REFERENCES programmer.pname);
+CREATE TABLE studies( pname VARCHAR(20) PRIMARY KEY, institute VARCHAR(30) NOT NULL, course VARCHAR(20) NOT NULL, coursefee INT NOT NULL, FOREIGN KEY(pname) REFERENCES (programmer.pname));
+CREATE TABLE studies( pname VARCHAR(20) PRIMARY KEY, institute VARCHAR(30) NOT NULL, course VARCHAR(20) NOT NULL, coursefee INT NOT NULL, FOREIGN KEY(pname) REFERENCES programmer(pname));
+SHOW DATABASES;
+SHOW TABLES;
+DESCRIBE studies;
+INSERT INTO studies VALUES (
+('ANAND', 'SABHARI', 'PGDCA', 4500),
+('ALTAF', 'COIT', 'DCA', 7200),
+('JULIANA', 'BITS', 'MCA', 2200),
+('KAMALA', 'PRAGATHI', 'DCP', 5000),
+('MARY', 'SABHARI', 'PGDCA', 4500),
+('NELSON', 'PRAGATHI', 'DAP', 6200),
+('PATRICK', 'PRAGATHI', 'DCAP', 5200),
+('QADIR', 'APPLE', 'HDCP', 14000),
+('RAMESH', 'SABHARI', 'PGDCA', 4500),
+('RESECCA', 'BRILLIANT', 'DCAP', 11000),
+('REMITHA', 'BDPS', 'DCS', 6000),
+('VIJAYA', 'BDPS', 'DCA', 48000) );
+INSERT INTO studies VALUES ( ('ANAND', 'SABHARI', 'PGDCA', 4500), ('ALTAF', 'COIT', 'DCA', 7200), ('JULIANA', 'BITS', 'MCA', 2200), ('KAMALA', 'PRAGATHI', 'DCP', 5000), ('MARY', 'SABHARI', 'PGDCA', 4500), ('NELSON', 'PRAGATHI', 'DAP', 6200), ('PATRICK', 'PRAGATHI', 'DCAP', 5200), ('QADIR', 'APPLE', 'HDCP', 14000), ('RAMESH', 'SABHARI', 'PGDCA', 4500), ('RESECCA', 'BRILLIANT', 'DCAP', 11000), ('REMITHA', 'BDPS', 'DCS', 6000), ('VIJAYA', 'BDPS', 'DCA', 48000) );
+INSERT INTO studies VALUES  ('ANAND', 'SABHARI', 'PGDCA', 4500), ('ALTAF', 'COIT', 'DCA', 7200), ('JULIANA', 'BITS', 'MCA', 2200), ('KAMALA', 'PRAGATHI', 'DCP', 5000), ('MARY', 'SABHARI', 'PGDCA', 4500), ('NELSON', 'PRAGATHI', 'DAP', 6200), ('PATRICK', 'PRAGATHI', 'DCAP', 5200), ('QADIR', 'APPLE', 'HDCP', 14000), ('RAMESH', 'SABHARI', 'PGDCA', 4500), ('RESECCA', 'BRILLIANT', 'DCAP', 11000), ('REMITHA', 'BDPS', 'DCS', 6000), ('VIJAYA', 'BDPS', 'DCA', 48000) ;
+SELECT * FROM studies;
+INSERT INTO studies VALUES ('ANAND', 'SABHARI', 'PGDCA', 4500);
+INSERT INTO studies VALUES ('ALTAF', 'COIT', 'DCA', 7200);
+INSERT INTO studies VALUES ('JULIANA', 'BITS', 'MCA', 2200);
+INSERT INTO studies VALUES ('KAMALA', 'PRAGATHI', 'DCP', 5000);
+INSERT INTO studies VALUES ('MARY', 'SABHARI', 'PGDCA', 4500), ('NELSON', 'PRAGATHI', 'DAP', 6200);
+INSERT INTO studies VALUES ('PATRICK', 'PRAGATHI', 'DCAP', 5200), ('QADIR', 'APPLE', 'HDCP', 14000), ('RAMESH', 'SABHARI', 'PGDCA', 4500), ('RESECCA', 'BRILLIANT', 'DCAP', 11000), ('REMITHA', 'BDPS', 'DCS', 6000), ('VIJAYA', 'BDPS', 'DCA', 48000) ;
+INSERT INTO studies VALUES ('PATRICK', 'PRAGATHI', 'DCAP', 5200), ('QADIR', 'APPLE', 'HDCP', 14000);
+INSERT INTO studies VALUES ('PATRICK', 'PRAGATHI', 'DCAP', 5200);
+INSERT INTO studies VALUES ('PATTRICK', 'PRAGATHI', 'DCAP', 5200), ('QADIR', 'APPLE', 'HDCP', 14000), ('RAMESH', 'SABHARI', 'PGDCA', 4500), ('RESECCA', 'BRILLIANT', 'DCAP', 11000), ('REMITHA', 'BDPS', 'DCS', 6000), ('VIJAYA', 'BDPS', 'DCA', 48000) ;
+INSERT INTO studies VALUES ('PATTRICK', 'PRAGATHI', 'DCAP', 5200);
+INSERT INTO studies VALUES ('QADIR', 'APPLE', 'HDCP', 14000), ('RAMESH', 'SABHARI', 'PGDCA', 4500), ('REBECCA', 'BRILLIANT', 'DCAP', 11000), ('REMITHA', 'BDPS', 'DCS', 6000), ('VIJAYA', 'BDPS', 'DCA', 48000) ;
+SELECT * FROM studies;
+CREATE TABLE software (
+pname NOT NULL,
+title VARCHAR(30),
+developing VARCHAR(20;
+CREATE TABLE software ( pname NOT NULL, title VARCHAR(30), developing VARCHAR(20;
+CREATE TABLE software ( pname NOT NULL, title VARCHAR(30) NOT NULL, developing VARCHAR(20) NOT NULL,
+scost NUMERIC(;
+CREATE TABLE software ( pname NOT NULL, title VARCHAR(30) NOT NULL, developing VARCHAR(20) NOT NULL, scost NUMERIC(;
+CREATE TABLE software ( pname NOT NULL, title VARCHAR(30) NOT NULL, developing VARCHAR(20) NOT NULL, scost DOUBLE(6, 2), dcost INT
+;
+CREATE TABLE software ( pname NOT NULL, title VARCHAR(30) NOT NULL, developing VARCHAR(20) NOT NULL, scost DOUBLE(6, 2) NOT NULL, dcost INT NOT NULL , sold SMALLINT
+ NOT NULL);
+CREATE TABLE software ( pname NOT NULL, title VARCHAR(30) NOT NULL, developing VARCHAR(20) NOT NULL, scost DOUBLE(6, 2) NOT NULL, dcost INT NOT NULL , sold SMALLINT  NOT NULL);
+CREATE TABLE software ( pname VARCHAR(20) NOT NULL, title VARCHAR(30) NOT NULL, developing VARCHAR(20) NOT NULL, scost DOUBLE(6, 2) NOT NULL, dcost INT NOT NULL , sold SMALLINT  NOT NULL);
+DESCRIBE software;
+INSERT INTO software VALUES
+('MARY', 'README', 'CPP', 100.00, 1200, 84);
+INSERT INTO software VALUES ('MARY', 'README', 'CPP', 100.00, 1200, 84);
+INSERT INTO software VALUES ;
+INSERT INTO software VALUES
+('ANAND', 'PARACHUTES', 'BASIC', 399.95, 6000, 43),
+;
+INSERT INTO software VALUES ('ANAND', 'PARACHUTES', 'BASIC', 399.95, 6000, 43),;
+INSERT INTO software VALUES ('ANAND', 'PARACHUTES', 'BASIC', 399.95, 6000, 43);
+SELECT * FROM software;
+ALTER TABLE software
+MODIFY COLUMN pname NOT NULL PRIMARY KEY;
+ALTER TABLE software MODIFY COLUMN pname NOT NULL PRIMARY KEY;
+ALTER TABLE software MODIFY COLUMN pname PRIMARY KEY;
+ALTER software
+ADD PRIMARY KEY(pname);
+ALTER software ADD PRIMARY KEY(pname);
+ALTER TABLE software ADD PRIMARY KEY(pname);
+DESCRIBE software;
+SELECT * FROM software;
+INSERT INTO software VALUES
+('ANAND', 'VIDEOTITLING', 'PASCAL', 7500.00, 16000, 9
+),
+('JULIANA', 'INVENTORY', 'COBOL', 3000.00, 3500, 0),
+('KAMALA' , 'PAYROLLPRG', 'DBASE', 9000.00, 20000, 7),
+('MARY', 'FINANCIALACC', 'ORACLE', 18000.00, 85000, 4),
+('MARY', 'CODEGENRRATOP', 'C', 4500.00, 20000, 23),
+('PATTRICK', 'README', 'CPP', 300.00, 1200, 84),
+('QADIR', 'BOMBSAWAY', 'ASSEMBLY', 750.00, 5000, 11),
+('QADIR', 'VACCINES', 'C', 1900.00, 3400, 21),
+('RAMESH', 'HOTLIMGMT', 'DBASE', 12000.00, 35000, 4),
+('RAMESH', 'DEADLEE', 'PASCAL', 599.95, 4500, 73),
+('REMITHA', 'PCUTILITIES', 'C', 725.00, 5000, 51),
+('REMITHA', 'TSRHELPPKG', 'ASSEMBLY', 2500.00, 6000, 7),
+('REVATHI', 'HOSPITALMGMT', 'PASCAL', 1100.00, 75000, 2),
+('VIJAYA', 'TSREDITOR', 'C', 900.00, 700, 6);
+INSERT INTO software VALUES ('ANAND', 'VIDEOTITLING', 'PASCAL', 7500.00, 16000, 9 ), ('JULIANA', 'INVENTORY', 'COBOL', 3000.00, 3500, 0), ('KAMALA' , 'PAYROLLPRG', 'DBASE', 9000.00, 20000, 7), ('MARY', 'FINANCIALACC', 'ORACLE', 18000.00, 85000, 4), ('MARY', 'CODEGENRRATOP', 'C', 4500.00, 20000, 23), ('PATTRICK', 'README', 'CPP', 300.00, 1200, 84), ('QADIR', 'BOMBSAWAY', 'ASSEMBLY', 750.00, 5000, 11), ('QADIR', 'VACCINES', 'C', 1900.00, 3400, 21), ('RAMESH', 'HOTLIMGMT', 'DBASE', 12000.00, 35000, 4), ('RAMESH', 'DEADLEE', 'PASCAL', 599.95, 4500, 73), ('REMITHA', 'PCUTILITIES', 'C', 725.00, 5000, 51), ('REMITHA', 'TSRHELPPKG', 'ASSEMBLY', 2500.00, 6000, 7), ('REVATHI', 'HOSPITALMGMT', 'PASCAL', 1100.00, 75000, 2), ('VIJAYA', 'TSREDITOR', 'C', 900.00, 700, 6);
+ALTER TABLE software MODIFY pname VARCHAR(20) NOT NULL;
+DESCRIBE
+ software;
+DESCRIBE  software;
+ALTER TABLE software MODIFY DROP PRIMARY KEY;
+ALTER TABLE software DROP PRIMARY KEY;
+DESCRIBE  software;
+INSERT INTO software VALUES ('ANAND', 'VIDEOTITLING', 'PASCAL', 7500.00, 16000, 9 ), ('JULIANA', 'INVENTORY', 'COBOL', 3000.00, 3500, 0), ('KAMALA' , 'PAYROLLPRG', 'DBASE', 9000.00, 20000, 7), ('MARY', 'FINANCIALACC', 'ORACLE', 18000.00, 85000, 4), ('MARY', 'CODEGENRRATOP', 'C', 4500.00, 20000, 23), ('PATTRICK', 'README', 'CPP', 300.00, 1200, 84), ('QADIR', 'BOMBSAWAY', 'ASSEMBLY', 750.00, 5000, 11), ('QADIR', 'VACCINES', 'C', 1900.00, 3400, 21), ('RAMESH', 'HOTLIMGMT', 'DBASE', 12000.00, 35000, 4), ('RAMESH', 'DEADLEE', 'PASCAL', 599.95, 4500, 73), ('REMITHA', 'PCUTILITIES', 'C', 725.00, 5000, 51), ('REMITHA', 'TSRHELPPKG', 'ASSEMBLY', 2500.00, 6000, 7), ('REVATHI', 'HOSPITALMGMT', 'PASCAL', 1100.00, 75000, 2), ('VIJAYA', 'TSREDITOR', 'C', 900.00, 700, 6);
+SHOW WARNINGS
+;
+SELECT * FROM software;
+DESCRIBE software;
+ALTER TABLE software
+MODIFY scost DOUBLE(8, 2);
+ALTER TABLE software MODIFY scost DOUBLE(8, 2);
+ALTER TABLE software
+;
+DESCRIBE software;
+SELECT * FROM software;
+UPDATE software SET scost = 18000.00 WHERE scost = 9999.99;
+UPDATE software SET scost = 12000.00 WHERE scost = 9999.99 AND pname = 'RAMESH';
+UPDATE software SET scost = 12000.00 WHERE scost = 12000.00 AND pname = 'RAMESH';
+SELECT * FROM software;
+UPDATE software SET scost = 12000.00 WHERE scost = 18000.00 AND pname = 'RAMESH';
+SELECT * FROM software;
+exit;
+USE sys;
+SHOW DATABSES;
+SHOW DATABASES;
+USE mysql;
+SHOW TABLES;
+SELECT * FROM user;
+SELECT user, host, plugin FROM user;
+CREATE USER 'muser'@'localhost' IDENTIFIED BY '';
+SELECT user, host, plugin FROM user;
+GRANT ALL PRIVILEGES ON *.* TO 'muser'@'localhost';
+UPDATE user SET plugin = 'auth_socket' WHERE user = 'muser';
+FLUSH PRIVILEGES;
+USE mysql;
+SELECT user, host, plugin FROM user;
+UPDATE user SET plugin = 'mysql_native_password' WHERE user = 'muser';
+SHOW TABLES;
+SHOW DATABSES;;
+SHOW DATABASES;;

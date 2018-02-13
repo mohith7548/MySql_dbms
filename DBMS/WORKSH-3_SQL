@@ -1,0 +1,39 @@
+1.SELECT ename, dname FROM employee NATURAL JOIN department;
+
+2.SELECT ename, sal, deptno FROM employee;
+
+3.SELECT ename, dname, deptno FROM employee NATURAL JOIN department;
+
+4.SELECT T.ename AS emp, S.ename AS manager FROM employee AS T, employee AS S WHERE T.mgr = S.empno;
+
+5.SELECT job, ename, dname FROM employee NATURAL JOIN department WHERE job = 'MANAGER';
+
+6.SELECT ename, job,deptno,  grade FROM employee WHERE job = 'MANAGER' ORDER BY grade;
+
+7.SELECT ename, comm, grade FROM employee WHERE comm IS NOT NULL AND comm <> 0;
+
+8.SELECT P.ename, P.job, Q.ename FROM employee AS P, employee AS Q WHERE P.mgr = Q.empno AND P.job = 'MANAGER';
+
+9.SELECT P.ename, P.mgr, P.deptno, Q.empno, Q.ename, Q.deptno FROM employee AS P, employee AS Q WHERE P.mgr = Q.empno AND P.deptno = Q.deptno;
+
+10. SELECT P.ename, P.mgr, P.deptno, Q.empno, Q.ename, Q.deptno FROM employee AS P, employee AS Q WHERE P.mgr = Q.empno AND P.deptno <> Q.deptno;
+
+11.SELECT ename FROM employee WHERE LEFT(ename,1) IN(SELECT LEFT(dname, 1) AS F FROM department);
+
+12.SELECT ename, MONTH(hiredate), MONTH(CURRENT_DATE) FROM employee WHERE MONTH(hiredate) = MONTH(CURRENT_DATE) AND grade = RIGHT( YEAR(hiredate), 1);
+
+13.SELECT ename, empno, mgr, grade FROM employee WHERE empno%2 = mgr%2 AND empno%2 = grade%2;
+
+14.SELECT ename, grade, deptno FROM employee WHERE 10*grade = deptno;
+
+15.//SAME ANS AS 14
+
+16.SELECT ename, dname, loc FROM employee NATURAL JOIN department WHERE LENGTH(ename) = LENGTH(dname) AND LENGTH(ename) = LENGTH(loc);
+
+17.SELECT ename, hiredate, grade FROM employee WHERE MONTH(hiredate) = grade;
+
+18.SELECT T.ename, T.job, S.job FROM employee AS T, employee AS S WHERE T.mgr = S.empno AND S.job = 'ANALYST';
+
+19.SELECT T.ename,T.grade, S.ename,S.grade FROM employee AS T, employee AS S WHERE T.mgr = S.empno AND T.grade = S.grade;
+
+20.SELECT T.ename, T.hiredate, S.ename, S.hiredate FROM employee AS T, employee AS S WHERE T.mgr = S.empno AND T.hiredate<S.hiredate;

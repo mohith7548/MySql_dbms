@@ -1,0 +1,4 @@
+//Gives the count of the letter 'I' in the ename;
+SELECT ename, ROUND( (LENGTH(ename) - LENGTH( REPLACE(ename, 'I', '') )) / LENGTH('I') ) AS count FROM employee;
+
+//MySql doesnot support 'EXCEPT' Operation, instead use 'NOT IN' or 'LEFT JOIN'
